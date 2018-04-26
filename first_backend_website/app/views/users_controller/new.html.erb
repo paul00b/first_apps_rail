@@ -1,0 +1,65 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Coucou le backend</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="user_new">Création d'utilisateur</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="user_new"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1>Coucou, créer ton identifiant et bienvenue dans la famille</h1>
+
+<!-- ##############################################################
+  Creation de mon form-->
+
+
+<form class="form-horizontal" action="<%= user_create_path %>" method="POST" >
+  <!-- L'action re-route vers mon fichier de création de user-->
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Name:</label>
+    <div class="col-sm-5">
+      <input type="name" class="form-control" id="name" placeholder="Enter name" name= "nom">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-5">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name= "mail">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="bio">Quelques mots sur toi ?</label>
+    <div class="col-sm-5">
+      <input type="bio" class="form-control" id="bio" placeholder="Ta bio ?" name= "bio">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Mot de passe:</label>
+    <div class="col-sm-5">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Se souvenir de moi ?</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" method="GET">Submit</button>
+    </div>
+  </div>
+</form>
+-->
