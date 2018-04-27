@@ -25,7 +25,7 @@ Les validations n'ont pas été faites. J'aimerais dire que j'ai pas eu le temps
 ## To do list
 * Walk toby, my rock pet
 * Discover how to cure the hunger problem (mine, not the world one's)
-* Have sex at least 3 times a day (good for the health )
+* Call mom 
 * Take jazz dance class
 
 ## Contributing
